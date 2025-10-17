@@ -1,0 +1,34 @@
+/*  */
+body {
+     font-family: "Pacifico", cursive;
+}
+.title {
+  color: blueviolet; /* Цвет текста */
+  margin-top: 5px;/* верхний отступ */
+}
+.card {
+  background-color: rgb(245, 206, 176); /*Цвет фона*/
+  width: 300px; /* ширина*/
+  border: 2px solid #d88989; /*рамка (толщина, тип линии, цвет)*/
+  border-radius: 10px; /*скругление углов*/
+  box-shadow: 2px 4px 10px 2px #666666; /*тень (сдвиг по горизонтали, сдвиг по вертикали, размытие, размер, цвет)*/
+  padding: 10px; /*внутренний отступ*/
+  text-align: center; /*выравнивание: по центру*/
+  margin:0 auto ; 
+}
+.avatar {
+  width: 100%; /*шинина*/
+  border-radius: 10px;/*скругление углов*/
+}
+.name {
+  color: crimson;
+  font-size: 16pt;
+  margin-bottom: 5px;
+}
+.description {
+  color: black;
+  background-color: brown;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.5; /* ВЫСОТА СТРОКИ */
+}
