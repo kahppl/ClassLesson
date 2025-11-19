@@ -1,0 +1,43 @@
+
+
+.dir {
+    width: 100px;
+  height: 150px;
+  background-color: #aecdc9;
+  position: relative;
+  animation: asilbek 1s infinite ease-in-out alternate; 
+  margin:  300px auto;
+}
+@keyframes asilbek {
+    0% {
+        transform: rotate(0deg) scale(1);   
+        background-color: aqua;
+        
+}
+100% {
+    transform: rotate(10800deg) scale(9);  
+    border-radius: 100px; 
+background-color: blueviolet;
+    
+}
+}
+.dip {
+    width: 100px;
+  height: 150px;
+  background-color: #aecdc9;
+  position: relative;
+  animation: adilbek 1s infinite ease-in-out alternate; 
+ } 
+
+@keyframes adilbek {
+    0% {
+        transform: rotate(0deg) scale(1);   
+        background-color: aqua;
+        
+}
+100% {
+    transform: rotate(10800deg) scale(9);  
+    border-radius: 100px; 
+background-color: blueviolet;
+    
+}}

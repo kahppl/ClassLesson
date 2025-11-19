@@ -1,0 +1,44 @@
+
+
+.dil {
+    width: 100px;
+  height: 100px;
+  background-color: #0CB1C4;
+  position: relative;
+  animation: asilbek 1s infinite ease-in-out alternate; 
+  margin: 100px 50px;
+}
+@keyframes asilbek {
+    0% {
+        top: 0;left: 0;        
+}
+25% {
+    top: 0; left: 500px;
+    background-color: rgb(20, 115, 141);
+  scale: 5;
+  border-radius: 5px;
+  rotate: 180deg;
+}
+50% {
+    top: 400px;left: 500px;
+    background-color: rgb(255, 0, 0);
+    scale: 2;
+    border-radius: 25px;
+    rotate: -180deg;
+}
+75% {
+    top: 400px; left: 0px;
+    background-color: rgb(44, 86, 154);
+    scale: 3;
+    border-radius: 3px;
+    rotate: 180deg;
+}
+  100% {
+    top: -2px;left: 0px;
+  background-color: rgb(185, 224, 26);
+  scale: 4;
+  border-radius: 75px;
+  rotate: -180deg;
+}  
+
+}

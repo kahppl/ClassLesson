@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif; /*шрифт*/
+    background-color: #f4f4f4;/*цвет всей страница*/
+    margin: 0;
+    padding: 20px; /*отступ от края*/
+}
+.button-container {
+    display: flex; /*это свойство, которое превращает блок во флекс-контейнер */
+    gap: 20px; /*это свойство, позволяющее задавать интервалы между элементами внутри контейнеров*/ 
+}
+.btn {
+    position: relative; /* это значение свойства position, которое определяет относительное позиционирование элемент */
+    background-color: #6200ea; /* это цвет кнопок*/
+    color: white; /*это цвет текста в кнопках*/
+    text-decoration: none; /* это свойство, которое добавляет оформление текста элемента в виде его подчёркивания, перечёркивания, линии над текстом и мигания*/
+    padding: 15px 30px;
+    border-radius: 5px; /* радиус краев*/
+    overflow: hidden;/* */
+    transition: color 0.3s;/* */
+}
+.btn::before,
+.btn::after {
+    content: '';/*это свойство, которое позволяет  которого нет в хтмл */
+    position: absolute;/* */
+    background-color: rgba(255, 255, 255, 0.2);/* цвет всплывающий кнопок там при наведении*/
+    transition: transform 0.3s;/* */
+}
+.btn::before {
+    top: 0;/* вверх*/
+    left: 50%;/*лево */
+    width: 200%;/* */
+    height: 100%;/* */
+    transform: translateX(-50%) scaleY(0);/* */
+    border-radius: 5px;/* */
+}
+.btn::after {
+    bottom: 0;/* низ*/
+    left: 50%;/* */
+    width: 200%;/* */
+    height: 100%;/* */
+    transform: translateX(-50%) scaleY(0);/* */
+    border-radius: 5px;/* */
+}
+.btn:hover {
+    color: #6200ea;/* не знаю */
+}
+.btn:hover::before {
+    transform: translateX(-50%) scaleY(1);/* */
+}
+.btn:hover::after {
+    transform: translateX(-50%) scaleY(1);/* */
+}
+.btn:active {
+    background-color: #3700b3;/* не знаю */
+}
+.quote {
+    background: white;/* цвет карточки*/
+    border-radius: 10px;/* радиус закругления карточки*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* тень карточки*/
+    width: 400px;/* */
+    padding: 30px;/* */
+    position: relative;/* позиция карточки*/
+    transition: transform 0.3s ease;/* */
+    margin-top: 100px;/* */
+}
+.quote:hover {
+    transform: translateY(-5px);/* */
+}
+.quote p {
+    font-size: 18px;/* размер текста*/
+    color: #562c2c;/*цвет заголовка у карточки */
+    line-height: 1.5;/* */
+    position: relative;/* */
+    padding: 0 20px;/* */
+}
+.quote p::before {
+    content: "“";/*кавычка красивая */
+    font-size: 40px;/* */
+    color: #3498db;/* цвет первой кавычки*/
+    position: absolute;/*абсолютная позиция не зависящая не от чего  */
+    left: 0;/* */
+    top: -10px;/* */
+}
+.quote p::after {
+    content: "”";/*еще кавычка красивая */
+    font-size: 40px;/* */
+    color: #3498db;/*цвет второй кавычки */
+    position: absolute;/* абсолютная позиция не зависящая не от чего */
+    right: 0;/* */
+    bottom: -20px;/* */
+}
+.quote:hover::after {
+    content: "";/* не красивая кавычка*/
+    position: absolute;/*абсолютная позиция не зависящая не от чего */
+    bottom: 20px;/* */
+    left: 30px;/* */
+    width: 340px;/* */
+    height: 2px;/* */
+    background-color: #3498db;/*понятия не имею*/
+    transition: opacity 0.3s ease;/* */
+    opacity: 1;
+}
+.author {
+    display: block;/* */
+    margin-top: 20px;/* */
+    font-style: italic;/* */
+    color: #555;/* цвет подписи в карточке*/
+    position: relative;/* */
+    padding-left: 30px;/* */
+}
+.author::before {
+    content: "—";/* */
+    font-size: 20px;/* */
+    color: #e74c3c;/* подчерк в карточке*/
+    position: absolute;/* абсолютная позиция не зависящая не от чего */
+    left: 0;/* */
+}
