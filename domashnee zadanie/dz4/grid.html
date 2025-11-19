@@ -19,6 +19,7 @@
             background: url('nigastrong.jpg');
             background-position: center;
             background-size: cover;
+            filter: blur(3px);
         }
         .img2 {
             grid-column-start: 2;
@@ -27,6 +28,8 @@
             background: url('дцп.jpg');
             background-position: center;
             background-size: cover;
+            filter: brightness(200%) saturate(2020%) invert(100);
+            mix-blend-mode: multiply;border-radius:  50%;
         }
         .img3 {
        
@@ -34,6 +37,7 @@
             background: url('Кукукареку.jpg');
             background-position: center;
             background-size: cover;
+            filter: contrast(50%);
         }
         .img4 {
         
@@ -41,6 +45,7 @@
             background: url('Пердак.jpg');
             background-position: center;
             background-size: cover;
+            filter: invert(100%);
         }
     
         .img5 {
@@ -49,9 +54,11 @@
             grid-row-start: 2;
             grid-row-end: 4;
             border: 2px solid #000;
-            background: url('стендов.jpg');
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(207, 207, 207, 0.8)), url('стендов.jpg');
             background-position: center;
             background-size: cover;
+            border-radius:  50%;
+            filter: grayscale(15)  ;
         }
         .img6 {
             
@@ -59,6 +66,7 @@
             background: url('дутый1.jpg');
             background-position: center;
             background-size: cover;
+            filter :saturate(387);
         }
     .img7 {
             grid-row-start: 2;
@@ -66,16 +74,20 @@
             grid-column-start: 4;
             grid-column-end: 5;
             border: 2px solid #000;
-            background: url('дутый2.jpg');
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0.632), rgba(0, 0, 255, 0.747)), url('дутый2.jpg');
             background-position: center;
             background-size: cover;
+            border-radius:  50%;
+            filter: drop-shadow(15px 15px  rgb(0, 0, 0)) ;
+            mix-blend-mode: overlay;
         }
         .img8 {
             
             border: 2px solid #000;
-            background: url('мамбетjpg.jpg');
+            background: url('яказах.jpg');
             background-position: center;
             background-size: cover;
+            filter: hue-rotate(180deg)	;
         }
         .img9 {
             
@@ -83,6 +95,7 @@
             background: url('яказах.jpg');
             background-position: center;
             background-size: cover;
+            filter: brightness(999%);
         }
         .img10 {
             
@@ -90,7 +103,9 @@
             background: url('кахахалк.jpg');
             background-position: center;
             background-size: cover;
+            filter :saturate(150); 
         }
+        
 
     </style>     
 </head>
