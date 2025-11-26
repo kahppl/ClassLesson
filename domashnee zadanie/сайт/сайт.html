@@ -1,26 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анимированный фон и текст</title>
     <link rel="stylesheet" href="style.css">
+    <title>Привет, я веб-разработчик</title>
 </head>
 <body>
-    <div class="gradient-background"></div>
-    <div class="circles">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+    
+    <div class="content-container">
+        <div class="gradient-blur"></div>
+        <div class="dots-container">
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <h1 id="typing-effect">Привет, я веб-разработчик</h1>
+        <div class="button"><button>Обо мне</button>
+        <button>Портфолио</button>
+        <button>Контакты</button>
+    </div>  
+    </div>
+    <div class="about-me">
+        <div class="header">
+            <h1>Обо мне</h1>
+        </div>
+        <div class="content">
+            <div class="profile">
+                <img src="дутый2.jpg" alt="Профиль">
+            </div>
+            <div class="description">
+                <p>Я профессиональный веб-разработчик с 5-летним опытом создания современных адаптивных веб-приложений.</p>
+                <h2>Мои навыки</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <img src="html5-logo.png"HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill">
+                        <img src="css3.png" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill">
+                        <img src="javascript.png"JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="content">
-        <h1 class="typing-text">Привет, я веб-разработчик</h1>
-        <div class="buttons">
-            <a href="сайт2.html" target="_blank" class="button">Обо мне</a>
-            <button>Портфолио</button>
-            <button>Контакты</button>
+        <div class="card">
+            <div class="card__face card__face--front">
+                <img src="OIP.png" alt="Изображение">
+            </div>
+            <div class="card__face card__face--back">
+                <p>Описание работы</p>
+                <p>Ну крутая работа ставьте 70 баллов</p>
+            </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="form">
+            <h1>Свяжитесь со мной</h1>
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="email">
+                <img src="kid.jpg" alt="Email">
+                <span>example@example.com</span>
+            </div>
+            <div class="phone">
+                <img src="red.png" alt="Телефон">
+                <span>+7 (123) 456-78-90</span>
+            </div>
+            <div class="location">
+                <img src="kid.jpg" alt="Местоположение">
+                <span>Москва, Россия</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social-icons">
+            <a href="#" class="telegram"><img src="tg.png" alt="Telegram"></a>
+            <a href="#" class="linkedin"><img src="in.png" alt="LinkedIn"></a>
+            <a href="#" class="twitter"><img src="twitter.png" alt="Twitter"></a>
+        </div>
+        <p class="copyright">© 2023 Все права защищены</p>
     </div>
 </body>
 </html>
