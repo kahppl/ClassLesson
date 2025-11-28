@@ -120,7 +120,7 @@ button:hover {
 }
 
 .about-me .header {
-    background-color: #007bff;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
@@ -258,11 +258,12 @@ body {
 }
 
 .card {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    
 }
 
 .card:hover {
