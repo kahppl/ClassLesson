@@ -1,0 +1,416 @@
+body {
+  background-color: blue;
+  margin: 0;
+}
+header {
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  margin: 0 15px;
+}
+header ul li a {
+  text-decoration: none;
+  color: aquamarine;
+  font-family: "Aerial";
+}
+/* Основные настройки */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    overflow-x: hidden; /* Убираем горизонтальные полосы прокрутки */
+}
+
+.gradient-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px); /* Блюр для градиента */
+    background: linear-gradient(to right, #ffd700, #f08080);
+    
+}
+
+.dots-container span {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый круг */
+    border-radius: 50%;
+    opacity: 0.7;
+    animation-name: move-dot;
+    animation-timing-function: cubic-bezier(.1,.8,.3,1);
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.dots-container span:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.dots-container span:nth-child(2) {
+    top: 50%;
+    left: 70%;
+    animation-delay: 2s;
+}
+
+.dots-container span:nth-child(3) {
+    top: 80%;
+    left: 30%;
+    animation-delay: 4s;
+}
+
+.dots-container span:nth-child(4) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 6s;
+}
+
+@keyframes move-dot {
+    0%, 100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+    50% {
+        transform: translateX(calc((var(--random-offset)) * 1vw + var(--random-start))) translateY(calc(var(--random-offset) * 1vh));
+    }
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#typing-effect {
+    font-size: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    border-right: 3px solid white;
+    animation: type-text 3s steps(30, end), blinking-cursor 0.5s step-end infinite;
+}
+
+@keyframes type-text {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinking-cursor {
+    50% { border-color: transparent; }
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Стили для раздела "Обо мне" */
+.about-me {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+}
+
+.about-me .header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+.about-me .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-me .profile {
+    margin-right: 20px;
+}
+
+.about-me .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-me .description {
+    text-align: left;
+}
+
+.about-me .description p {
+    margin-bottom: 20px;
+}
+
+.about-me .skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-me .skill {
+    display: flex;
+    align-items: center;
+}
+
+.about-me .skill img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.about-me .skill span {
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header h1:hover::after {
+    transform: scaleX(1);
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.profile a {
+    margin-right: 20px;
+    
+    
+}
+
+.profile img:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    
+}
+
+.description {
+    text-align: left;
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__face--front {
+    background-color: white;
+}
+
+.card__face--back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    background: linear-gradient(rgb(156, 156, 255), rgb(80, 231, 224))
+    
+}
+
+.card__face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form {
+    width: 50%;
+}
+
+.form h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}
+
+.contact-info span {
+    font-weight: bold;
+}
+.footer {
+    background-color: #455361;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.copyright {
+    font-size: 14px;
+}
