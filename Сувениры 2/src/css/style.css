@@ -538,8 +538,8 @@ padding: 17.5px 28px 17.5px 28px;
     display: flex;
     align-items: center;
     padding: 40.5px 0px 40.5px 70px;
-    overflow: hidden;
-
+  
+    position: relative;
 }
 
 .getpricelist__title{
@@ -622,9 +622,119 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 }
 .getpricelist__image{
-    width: 60%;
+    position: absolute;
+    right: -70px;
+    bottom: -100px;
 }
 
 .getpricelist__link {
      color: #7b48e8;
+}
+
+
+
+
+.production__content{
+    max-width:1346px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.production__text {
+    max-width: 724px;
+    margin-right: 74px;
+}
+
+.production__title {
+color: #383838;
+    font-family: montserrat;
+    font-style: Regular;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top:15px ;
+    
+}
+
+.production__description{
+    color: #20202080;
+    font-family: montserrat;
+    font-style: Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top:15px ;
+    margin-bottom: 15px;
+}
+
+.production__cards{
+    display: flex;
+}
+
+.production__card{
+    border: 1px solid rgba(32, 32, 32, 0.1);
+    border-radius: 4px;
+    width: 228px;
+    margin-right: 20px;
+    padding: 16px 16px 16px 16px;
+}
+
+.production__card-title{
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.production__card-image{
+    margin-right: 9px;
+}
+
+.production__card-description{
+font-family: montserrat;
+    font-size: 15px;
+    font-weight: regular;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #757575;
+}
+
+.production__image-block{
+    position: relative;
+}
+
+.production__image{
+    width:550px;
+    height: 403px;
+    position: absolute;
+    z-index: 1;
+}
+
+.production__background1 {
+    width: 553.1px;
+    height: 401.93px;
+    background-color: #E7E3ED;
+    transform: rotate(2.82deg);
+    border-radius: 12px;
+    position: absolute;
+}
+.production__background2 {
+    width: 553.1px;
+    height: 401.93px;
+    background-color: rgba(231, 227, 237,0.5 );
+    transform: rotate(5.86deg);
+    border-radius: 12px;
+    position: absolute;
 }
