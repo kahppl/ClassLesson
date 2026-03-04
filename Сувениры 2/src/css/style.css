@@ -738,3 +738,81 @@ font-family: montserrat;
     border-radius: 12px;
     position: absolute;
 }
+
+
+
+
+
+.fabric{
+display: flex;
+ margin-bottom: 64px;
+ overflow: hidden;
+ justify-content: center;
+}
+
+.fabric__image {
+    margin-right: 20px;
+}
+
+
+.saleform__content {
+    max-width: 892px;
+}
+
+.saleform__input {
+    max-width: 308.5px;
+    max-height: 50px;
+}
+
+.saleform__privacy-policy {
+        color: black;
+    font-family: montserrat;
+    font-style: Medium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top:15px 
+}
+
+.saleform__link {
+         color: #7b48e8;
+}
+
+.Whatsapp{
+    color: #2BB84A;
+    font-weight: bold;
+}
+
+.Viber{
+    color: #7B48E8  ;
+    font-weight: bold;
+}
+
+.saleform__title {
+    font-family: montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 8px;
+    max-width: 80%;
+}
+
+.saleform__description {
+ max-width: 80%;
+ font-family: montserrat;
+    font-size: 15px;
+    font-weight: Regular;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 9px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.saleform__input {
+    
+}
