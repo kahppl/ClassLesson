@@ -755,25 +755,37 @@ display: flex;
 }
 
 
-.saleform__content {
-    max-width: 892px;
+.saleform{
+    background-color: #f8f8f8;
+    padding-top:64px ;
+    padding-bottom: 64px;
 }
 
-.saleform__input {
-    max-width: 308.5px;
-    max-height: 50px;
+
+.saleform__content {
+    max-width: 892px;
+    border-radius: 4px;
+    box-shadow: 0px 16px 53px 0px #000000;
+    margin: 0 auto;
+    padding: 24px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 .saleform__privacy-policy {
         color: black;
     font-family: montserrat;
     font-style: Medium;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 16px;
     letter-spacing: 0%;
     text-align: center;
-    margin-top:15px 
+    margin-top: 26px;
+    margin-bottom: 24px; 
 }
 
 .saleform__link {
@@ -783,6 +795,7 @@ display: flex;
 .Whatsapp{
     color: #2BB84A;
     font-weight: bold;
+    
 }
 
 .Viber{
@@ -798,11 +811,12 @@ display: flex;
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 8px;
-    max-width: 80%;
+    max-width: 75%;
+    
 }
 
 .saleform__description {
- max-width: 80%;
+
  font-family: montserrat;
     font-size: 15px;
     font-weight: Regular;
@@ -811,8 +825,49 @@ display: flex;
     text-align: left;
     margin-bottom: 9px;
     color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 24px;
+    margin-top: 8px;
 }
 
 .saleform__input {
+    width: 308.5px;
+    height: 50px;
+    background-color:  #ececec;
+    font-family: montserrat;
+    border: none;
+    margin-right: 18px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 3px;
+}
+
+.saleform__inputs {
+    display: flex;
     
+}
+
+
+.saleform__button{
+    background-color: #7A4CD9;
+    width: 191px;
+    height: 50px;
+    color: #f8f8f8;
+    font-family: montserrat;
+    font-weight: 12px;
+}
+
+.saleform__help {
+     font-family: montserrat;
+    font-size: 15px;
+    font-weight: Regular;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+   
+    
+}
+
+.saleform__whatsapp{
+    position: relative;
+    margin-bottom: -10px;
 }
