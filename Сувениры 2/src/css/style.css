@@ -871,3 +871,84 @@ display: flex;
     position: relative;
     margin-bottom: -10px;
 }
+
+.warranty {
+
+    background-color: #ffffff;
+    padding-bottom: 64px;
+  
+}
+
+.warranty__name {
+    font-family: montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 8%;
+    text-align: left;
+    color: #999999; 
+
+}
+
+
+.warranty__title {
+    font-family: montserrat;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #383838; 
+}
+
+.number {
+    color: #7A4CD9;
+    font-family: montserrat;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 8%;
+    text-align: left;
+}
+
+.warranty__card{
+    display: flex;
+}
+
+.warranty__card--name{
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #383838; 
+}
+
+.warranty__card--description{
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #000000d0; 
+}
+
+.warranty__button {
+    background-color: #7A4CD9;
+    color: #f8f8f8;
+    border-radius: 4px;
+    width: 381px;
+    height: 88px;
+    
+}
+
+.warranty__button--text {
+        font-family: montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
