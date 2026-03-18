@@ -952,3 +952,163 @@ display: flex;
     letter-spacing: 0%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 1024px) {
+    .header {
+        padding: 21px;
+    }
+    .header__input-search {
+        width: 300px;
+    }
+    .navigation {
+        padding: 0 21px;
+    }
+    .navigation__menu{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navigation__item {
+        margin: 0;
+    }
+    .home {
+        padding-left: 21px;
+    }
+    .home__content {
+        width: 50%;
+        z-index: 1;
+    }
+    .home__image {
+        margin-left: 10px;
+        width: 50%;
+    }
+    .home__lines {
+        left: -626px;
+        bottom: 629px;
+    }
+    .catalog__container {
+        width: auto;
+        padding: 76px 21px 0 21px;
+    }
+    .longbanner__left-image {
+        left: -869px;
+    }
+    .longbanner__right-image{
+        right: -823px;
+    }
+    .orderprocess__cards {
+        margin-left: 21px;
+        
+    }
+
+    .orderprocess__head {
+        margin-left: 140px;
+    }
+
+    .getpricelist__image {
+        right: -350px;
+    }
+    .production__background1{
+        left: -80px;
+    }
+    .production__background2 {
+        left: -80px;
+    }
+    .production__image {
+        left: -80px;
+    }
+
+    .fabric {
+        overflow: visible;
+        margin-left: 300px;
+    }
+    .fabric__image {
+        width: 300px;
+
+    }
+    .saleform {
+        margin-left: 120px;
+    }
+}
+
+
+
+
+
+
+
+@media  (max-width: 768px) {
+    .header__search {
+        width: 50px;
+        height: 50px;
+    }
+    .header__input-search {
+        display: none;
+    }
+    .header__category {
+        display: none;
+    }
+    .home {
+        justify-content: flex-start;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .home__content{
+        width: 60%;
+    }
+    .home__image {
+        position: absolute;
+        height: 100%;
+        right:-75px;
+        width: auto;
+    }
+    .catalog__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .getcatalog__image {
+        width: 82%;
+        bottom: auto;
+        right: -121px;
+    }
+    .orderprocess__cards{
+        margin-left: 200px;
+    }
+    .orderprocess__head {
+        margin-left: 200px;
+    }
+        .getpricelist__image {
+        right: -600px;
+        top: 50px;
+    }
+    .production__text {
+        max-width: 724px;
+        margin-right: 80px;
+        margin-left: 120px;
+    }
+.saleform {}
+}
+    
