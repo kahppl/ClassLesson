@@ -1,6 +1,5 @@
 @import url(fonts.css);
 
-* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -953,9 +952,42 @@ display: flex;
     text-align: center;
 }
 
+.header__cart-count {
+    width: 16px;
+    top: -8px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #7A4CD9;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 10px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+}
+.header__cart {
+    position: relative;
+    display: none;
+}
 
+.header__gam-line {
+    width: 16px;
+    height: 3px;
+    background-color: #333333;
+    border-radius: 1px;
+    margin-bottom: 4px;
+}
 
-
+.header__gam-line-short {
+    width: 16px;
+}
+.header__gam {
+    margin-right: 22px;
+    display: none;
+}
 
 
 
@@ -1109,6 +1141,140 @@ display: flex;
         margin-right: 80px;
         margin-left: 120px;
     }
-.saleform {}
+
 }
     
+
+
+
+@media (max-width: 540px) {
+    .header__name-city{
+        display: none;
+    }
+    .header__contacts {
+        display: none;
+    }
+.header__button {
+    display: none;
+}
+.header__sea rch{
+    margin-left: auto;
+}
+.header__cart {
+    display: flex;
+}
+.navigation {
+    display: none;
+}
+.home__image {
+    display: none;
+}
+.Home__callback {
+    display: none;
+}
+.home__content {
+    text-align: center;
+    width: 100%;
+}
+.home__name {
+    display: none;
+}
+.home__name {
+    display: none;
+}
+.Home__offer {
+    text-align: center;
+}
+.home__action {
+    text-align: center;
+}
+.home {
+    padding: 49px 25px;
+    background: url(.../images/BG-mobile.png);
+    background-size: auto 120%;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-bottom: 263px;
+    height: 360px;
+}
+.home__lines {
+    display: none;
+}
+.catalog__allcatalog-link {
+    display: none;
+}
+.catalog__grid-link {
+    display: none;
+}
+.catalog__grid-item {
+    flex-direction: column;
+    align-items: center;
+}
+.getcatalog__text {
+    width: 100%;
+    z-index: 1;
+}
+.getcatolog__description {
+    margin-bottom: 164px;
+}
+.getcatolog__button  {
+    margin:  0 auto;
+}
+.saleform__inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.saleform__input {
+    margin-bottom: 16px;
+    width: 296px;
+}
+.saleform__button {
+    position: relative;
+    left: 16px;
+}
+.warranty__description{
+    font-size: 19px;
+}
+.warranty__download-button {
+    width: 328px;
+    height: 47px;
+    margin-top: 24px;
+    z-index: 3;
+}
+.warranty__contract {
+    width: 464.37px;
+    height: 370.89px;
+    margin-top: 150px;
+}
+.warranty__first {
+    margin-bottom: 24px;
+}
+.warranty__second {
+    margin-bottom: 24px;
+}
+.warranty__third {
+    margin-bottom: 237px;
+}
+.getpricelist__content {
+    display: flex;
+}
+.getcatalog__image {
+    width: 345.24px;
+    height: 265.8px;
+    position: relative;
+    margin-bottom:400px ;
+}
+.getcatalog__title {
+    margin-bottom: 20px;
+}
+.getcatalog__button {
+    z-index: 1;
+}
+}
+
+@media (max-width: 368px) {
+    .Home__offer{
+        font-size: 19px;
+    }
+}
