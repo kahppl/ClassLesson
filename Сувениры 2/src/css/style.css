@@ -1276,5 +1276,57 @@ display: flex;
 @media (max-width: 368px) {
     .Home__offer{
         font-size: 19px;
+        line-height: 21px;
+    }
+    .home__action {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .home {
+        height: 230px;
+        background-position: -172px top;
+        margin-bottom:369xpx ;
+    }
+    .Home__callback {
+        margin-top: 46px;
+    }
+    .Home__callback-action {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .Home__callback-form {
+        flex-direction: column;
+    }
+    .home__callback-input {
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .Home__callback-button {
+        width: auto;
+        text-align: center;
+    }
+    .getcatalog__title {
+        font-size: 10px;
+        line-height: 21px;
+    }
+    .getcatolog__description {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .getcatalog__content {
+        padding: 23px 18px 26px 26px;
+    }
+    .getcatalog__image {
+        right: -47px;
+        bottom: -45px;
+        width: 110%;
+    }
+    .longbanner__item {
+        margin-right: 8px;
+        width: 128px;
+    }
+    .processorder__map {
+        
     }
 }
