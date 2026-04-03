@@ -1,5 +1,5 @@
 @import url(fonts.css);
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,10 +22,15 @@ button {
     justify-content: space-between;
     align-items: center ;
     padding: 21px 12.5%;
+    background-color: ;
 }
 .header__logo {
     display: flex;
     align-items: center;
+    font-family: Montserrat;
+    font-style: Bold;
+    padding-right: 40px;
+    font-weight: 800;
 }
 .header_name-site {
 font-family: Montserrat;
@@ -872,7 +877,7 @@ display: flex;
 }
 
 .warranty {
-
+    margin: 0 auto;
     background-color: #ffffff;
     padding-bottom: 64px;
   
@@ -890,6 +895,10 @@ display: flex;
     
 }
 
+.warranty__content {
+    max-width: 1346px;
+    margin: 0 auto;
+}
 
 .warranty__title {
     font-family: montserrat;
@@ -1009,23 +1018,6 @@ display: flex;
     margin-right: 22px;
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1351,3 +1343,4 @@ display: flex;
 
     }
 }
+
