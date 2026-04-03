@@ -466,7 +466,7 @@ width: max-content;
     display: flex;
 }
 .orderprocess__title {
-color: #7A4CD9;
+color: hsl(0, 0%, 0%);
 font-family: Montserrat;
 font-style: Regular;
 font-size: 24px;
@@ -886,7 +886,8 @@ display: flex;
     letter-spacing: 8%;
     text-align: left;
     color: #999999; 
-
+    margin-bottom: 24px;
+    
 }
 
 
@@ -898,6 +899,8 @@ display: flex;
     letter-spacing: 0%;
     text-align: left;
     color: #383838; 
+    width: 528px;
+    margin-bottom: 32px;
 }
 
 .number {
@@ -908,10 +911,12 @@ display: flex;
     line-height: 25px;
     letter-spacing: 8%;
     text-align: left;
+    margin-right: 54px;
 }
 
 .warranty__card{
     display: flex;
+    width: 700px;
 }
 
 .warranty__card--name{
@@ -921,7 +926,8 @@ display: flex;
     line-height: 28px;
     letter-spacing: 0%;
     text-align: left;
-    color: #383838; 
+    color: #383838;
+    margin-bottom: 9px;
 }
 
 .warranty__card--description{
@@ -932,6 +938,7 @@ display: flex;
     letter-spacing: 0%;
     text-align: left;
     color: #000000d0; 
+    margin-bottom: 24px;
 }
 
 .warranty__button {
@@ -952,6 +959,19 @@ display: flex;
     text-align: center;
 }
 
+.warranty__circle {
+    color: #E7E1F0;
+    border-radius: 50%;
+
+}
+
+.warranty__image {
+    position: absolute;
+    margin-left: 600px;
+}
+
+
+
 .header__cart-count {
     width: 16px;
     top: -8px;
@@ -968,6 +988,7 @@ display: flex;
     position: absolute;
     right: -10px;
 }
+
 .header__cart {
     position: relative;
     display: none;
@@ -1273,7 +1294,7 @@ display: flex;
 }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 360px) {
     .Home__offer{
         font-size: 19px;
         line-height: 21px;
@@ -1327,6 +1348,6 @@ display: flex;
         width: 128px;
     }
     .processorder__map {
-        
+
     }
 }
